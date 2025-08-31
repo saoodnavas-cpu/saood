@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saood Nawas | Portfolio</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Canvas for Matrix Effect -->
+  <canvas id="matrix"></canvas>
+
+  <!-- Header -->
+  <header>
+    <h1>Saood Nawas</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h2>Hello, I'm Saood 👋</h2>
+    <p>
+      A passionate BCA student aspiring to become a software developer.<br>
+      I love learning new technologies and building cool projects.
+    </p>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+    <a href="https://www.linkedin.com/in/saood-navas-237613352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+      <button>Hire Me</button>
+    </a>
+  </div>
+
+  <!-- About Section -->
+  <div class="about" id="about">
+    <h3>About Me</h3>
+    <p>
+      I'm a BCA undergraduate from Bangalore with interests in 
+      <b>Web Development</b>, <b>Cloud Computing</b>, and <b>AI</b>.  
+      I enjoy solving problems, learning new programming concepts, and 
+      working on exciting projects.
+    </p>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="skills" id="skills">
+    <h3>My Skills</h3>
+    <div class="skill-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>Cloud Computing</span>
+      <span>AI Basics</span>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="projects" id="projects">
+    <h3>My Projects</h3>
+    <div class="project-gallery">
+      <div class="project-card">
+        <img src="Screenshot 2025-08-31 134349.jpg" alt="Project 1">
+        <h4>Portfolio Website</h4>
+        <p>A personal responsive portfolio showcasing my skills and projects.</p>
+      </div>
+      <div class="project-card">
+        <img src="Screenshot 2025-08-31 135438.jpg" alt="Project 2">
+        <h4>Facebook Page</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact" id="contact">
+    <h3>Contact Me</h3>
+    <form action="https://formspree.io/f/mqadbekv" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+ 
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+      toggleBtn.textContent = document.body.classList.contains("light")
+        ? "☀ Light Mode"
+        : "🌙 Dark Mode";
+    });
+  </script>
+
+  <!-- Matrix Effect Script -->
+  <script src="matrix.js"></script>
+  <script src="script.js"></script>
+   <!-- Footer -->
+  <footer>
+    &copy; 2025 Saood Nawas | All Rights Reserved
+  </footer>
+</body>
+</html>
